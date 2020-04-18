@@ -6,11 +6,12 @@
 # https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
 # https://learnxinyminutes.com/docs/yaml/
 
-title: fastpages
-description: An easy to use blogging platform with support for Jupyter Notebooks.
+title: Blog of cast42
+description: Public space to share things of interest with the world.
+
 github_username: cast42
 # you can comment the below line out if your repo name is not different than your baseurl
-github_repo: "new_fast_pages"
+github_repo: "cast42.github.io"
 
 # OPTIONAL: override baseurl and url if using a custom domain
 # Note: leave out the trailing / from this value. 
@@ -38,7 +39,7 @@ baseurl: "/new_fast_pages" # the subpath of your site, e.g. "/blog".
 
 # Email and twitter are optional:
 email: 
-twitter_username: "fastdotai"
+twitter_username: "cast42"
 
 # Set this to true to get LaTeX math equation support
 use_math: 
@@ -53,7 +54,7 @@ show_image: false
 show_tags: true
 
 # Add your Google Analytics ID here if you have one and want to use it
-google_analytics:
+google_analytics: UA-156881747-1
 
 exclude:
   - docker-compose.yml
