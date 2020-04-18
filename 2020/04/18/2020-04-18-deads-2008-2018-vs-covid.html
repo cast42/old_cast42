@@ -13,9 +13,9 @@
 <meta property="og:url" content="https://fastpages.fast.ai/2020/04/18/2020-04-18-deads-2008-2018-vs-covid.html" />
 <meta property="og:site_name" content="Blog of cast42" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-04-18T08:28:59-05:00" />
+<meta property="article:published_time" content="2020-04-18T08:39:39-05:00" />
 <script type="application/ld+json">
-{"description":"Public space to share things of interest with the world.","@type":"BlogPosting","url":"https://fastpages.fast.ai/2020/04/18/2020-04-18-deads-2008-2018-vs-covid.html","dateModified":"2020-04-18T08:28:59-05:00","datePublished":"2020-04-18T08:28:59-05:00","headline":"Blog of cast42","mainEntityOfPage":{"@type":"WebPage","@id":"https://fastpages.fast.ai/2020/04/18/2020-04-18-deads-2008-2018-vs-covid.html"},"@context":"https://schema.org"}</script>
+{"description":"Public space to share things of interest with the world.","@type":"BlogPosting","url":"https://fastpages.fast.ai/2020/04/18/2020-04-18-deads-2008-2018-vs-covid.html","dateModified":"2020-04-18T08:39:39-05:00","datePublished":"2020-04-18T08:39:39-05:00","headline":"Blog of cast42","mainEntityOfPage":{"@type":"WebPage","@id":"https://fastpages.fast.ai/2020/04/18/2020-04-18-deads-2008-2018-vs-covid.html"},"@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -74,13 +74,13 @@
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline"></h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-04-18T08:28:59-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline"></h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-04-18T08:39:39-05:00" itemprop="datePublished">
         Apr 18, 2020
       </time>
        • <span class="read-time" title="Estimated read time">
     
     
-      3 min read
+      4 min read
     
 </span></p>
 
@@ -112,7 +112,8 @@
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Import pandas for data wrangling and Altair for plotting</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">altair</span> <span class="k">as</span> <span class="nn">alt</span>
 </pre></div>
 
@@ -154,7 +155,8 @@
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Get a quick look to the data</span>
+<span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -287,12 +289,12 @@
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-ffcc1f53d66842a1aae353e3e166863f"></div>
+<div id="altair-viz-a3340909d1e44274bd4d0c1b601d292c"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-ffcc1f53d66842a1aae353e3e166863f") {
-      outputDiv = document.getElementById("altair-viz-ffcc1f53d66842a1aae353e3e166863f");
+    if (outputDiv.id !== "altair-viz-a3340909d1e44274bd4d0c1b601d292c") {
+      outputDiv = document.getElementById("altair-viz-a3340909d1e44274bd4d0c1b601d292c");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -397,7 +399,8 @@
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">deaths_be</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Inspect how the data is stored</span>
+<span class="n">deaths_be</span>
 </pre></div>
 
     </div>
@@ -724,7 +727,8 @@
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_deaths</span><span class="p">[</span><span class="s1">&#39;Nieuwe covid-19 Sterfgevallen&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_deaths</span><span class="p">[</span><span class="s1">&#39;Overlijdens&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">diff</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Calculate the day-by-day change</span>
+<span class="n">df_deaths</span><span class="p">[</span><span class="s1">&#39;Nieuwe covid-19 Sterfgevallen&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_deaths</span><span class="p">[</span><span class="s1">&#39;Overlijdens&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">diff</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -801,12 +805,12 @@ memory usage: 2.8 KB
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-d55cce81b2884d8fb4651110053d9350"></div>
+<div id="altair-viz-27cfb947e8ce40578a7b41acf313ff5c"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-d55cce81b2884d8fb4651110053d9350") {
-      outputDiv = document.getElementById("altair-viz-d55cce81b2884d8fb4651110053d9350");
+    if (outputDiv.id !== "altair-viz-27cfb947e8ce40578a7b41acf313ff5c") {
+      outputDiv = document.getElementById("altair-viz-27cfb947e8ce40578a7b41acf313ff5c");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -883,12 +887,12 @@ memory usage: 2.8 KB
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-35475c117f4c4f8988e00d6a5900d0d1"></div>
+<div id="altair-viz-2047a60c00074c39a0607641bfa851ae"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-35475c117f4c4f8988e00d6a5900d0d1") {
-      outputDiv = document.getElementById("altair-viz-35475c117f4c4f8988e00d6a5900d0d1");
+    if (outputDiv.id !== "altair-viz-2047a60c00074c39a0607641bfa851ae") {
+      outputDiv = document.getElementById("altair-viz-2047a60c00074c39a0607641bfa851ae");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -1096,12 +1100,12 @@ memory usage: 2.8 KB
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-8f01ca931ba94f3e8dd9345a2978b363"></div>
+<div id="altair-viz-c026bb804d0943be83ad0d30348d83cb"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-8f01ca931ba94f3e8dd9345a2978b363") {
-      outputDiv = document.getElementById("altair-viz-8f01ca931ba94f3e8dd9345a2978b363");
+    if (outputDiv.id !== "altair-viz-c026bb804d0943be83ad0d30348d83cb") {
+      outputDiv = document.getElementById("altair-viz-c026bb804d0943be83ad0d30348d83cb");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -1340,12 +1344,12 @@ memory usage: 2.8 KB
 
 <div class="output_html rendered_html output_subarea output_execute_result">
 
-<div id="altair-viz-e1bca5c4e8694de6af40409f9c1e0f1a"></div>
+<div id="altair-viz-04fb4d7f81e64ee09afb8e26f071fb29"></div>
 <script type="text/javascript">
   (function(spec, embedOpt){
     let outputDiv = document.currentScript.previousElementSibling;
-    if (outputDiv.id !== "altair-viz-e1bca5c4e8694de6af40409f9c1e0f1a") {
-      outputDiv = document.getElementById("altair-viz-e1bca5c4e8694de6af40409f9c1e0f1a");
+    if (outputDiv.id !== "altair-viz-04fb4d7f81e64ee09afb8e26f071fb29") {
+      outputDiv = document.getElementById("altair-viz-04fb4d7f81e64ee09afb8e26f071fb29");
     }
     const paths = {
       "vega": "https://cdn.jsdelivr.net/npm//vega@5?noext",
@@ -1401,7 +1405,7 @@ memory usage: 2.8 KB
 
 <div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Obtain-more-detail">Obtain more detail<a class="anchor-link" href="#Obtain-more-detail"> </a></h1>
+<h1 id="Obtain-more-detail-(for-another-blogpost...)">Obtain more detail (for another blogpost...)<a class="anchor-link" href="#Obtain-more-detail-(for-another-blogpost...)"> </a></h1>
 </div>
 </div>
 </div>
