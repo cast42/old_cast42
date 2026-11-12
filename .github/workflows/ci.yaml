@@ -25,10 +25,16 @@ jobs:
         rm -rf _site
         sudo chmod -R 777 .
 
-    - name: Jekyll build
-      uses: docker://jekyll/jekyll
+    - name: Set up Ruby
+      uses: ruby/setup-ruby@v1
       with:
-        args: jekyll build -V
+        ruby-version: '3.3'
+        bundler-cache: true
+
+    - name: Jekyll build
+      run: bundle exec jekyll build -V
+      env:
+        PAGES_REPO_NWO: ${{ github.repository }}
         
     - name: copy CNAME file into _site if CNAME exists
       run: |
