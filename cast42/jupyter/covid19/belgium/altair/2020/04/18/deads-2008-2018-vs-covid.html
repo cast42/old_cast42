@@ -2,18 +2,22 @@
 <html lang="en"><head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.6.1 -->
-<title>Blog of cast42 | Public space to share things of interest with the world.</title>
-<meta name="generator" content="Jekyll v3.8.5" />
-<meta property="og:title" content="Blog of cast42" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"><link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico"><!-- Begin Jekyll SEO tag v2.9.1 -->
+<title>Daily covid-19 Deaths compared to average deaths in Belgium the last 10 years | Blog of cast42</title>
+<meta name="generator" content="Jekyll v3.10.0" />
+<meta property="og:title" content="Daily covid-19 Deaths compared to average deaths in Belgium the last 10 years" />
+<meta name="author" content="Lode Nachtergaele" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Public space to share things of interest with the world." />
-<meta property="og:description" content="Public space to share things of interest with the world." />
+<meta name="description" content="Awesome summary" />
+<meta name="twitter:description" property="og:description" content="Awesome summary" />
 <meta property="og:site_name" content="Blog of cast42" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2020-04-18T10:53:47-05:00" />
+<meta property="article:published_time" content="2020-04-18T00:00:00+00:00" />
+<meta property="article:modified_time" content="2020-04-18T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:title" content="Daily covid-19 Deaths compared to average deaths in Belgium the last 10 years" />
 <script type="application/ld+json">
-{"description":"Public space to share things of interest with the world.","@type":"BlogPosting","url":"/2020/04/18/2020-04-18-deads-2008-2018-vs-covid.html","dateModified":"2020-04-18T10:53:47-05:00","datePublished":"2020-04-18T10:53:47-05:00","headline":"Blog of cast42","mainEntityOfPage":{"@type":"WebPage","@id":"/2020/04/18/2020-04-18-deads-2008-2018-vs-covid.html"},"@context":"https://schema.org"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"Lode Nachtergaele"},"dateModified":"2020-04-18T00:00:00+00:00","datePublished":"2020-04-18T00:00:00+00:00","description":"Awesome summary","headline":"Daily covid-19 Deaths compared to average deaths in Belgium the last 10 years","mainEntityOfPage":{"@type":"WebPage","@id":"/cast42/jupyter/covid19/belgium/altair/2020/04/18/deads-2008-2018-vs-covid.html"},"url":"/cast42/jupyter/covid19/belgium/altair/2020/04/18/deads-2008-2018-vs-covid.html"}</script>
 <!-- End Jekyll SEO tag -->
 
   <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -72,9 +76,11 @@
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline"></h1><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-04-18T10:53:47-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Daily covid-19 Deaths compared to average deaths in Belgium the last 10 years</h1><p class="page-description">Awesome summary</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-04-18T00:00:00+00:00" itemprop="datePublished">
         Apr 18, 2020
-      </time>
+      </time>• 
+          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+            <span class="p-author h-card" itemprop="name">Lode Nachtergaele</span></span>
        • <span class="read-time" title="Estimated read time">
     
     
@@ -83,11 +89,46 @@
 </span></p>
 
     
+      <p class="category-tags"><i class="fas fa-tags category-tags-icon"></i></i> 
+      
+        <a class="category-tags-link" href="/categories/#cast42">cast42</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/categories/#jupyter">jupyter</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/categories/#covid19">covid19</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/categories/#Belgium">Belgium</a>
+        &nbsp;
+      
+        <a class="category-tags-link" href="/categories/#altair">altair</a>
+        
+      
+      </p>
+    
 
-    </header>
+    
+      
+        <div class="pb-5 d-flex flex-wrap flex-justify-end">
+          <div class="px-2">
+<a href="https://github.com/cast42/cast42/tree/master/_notebooks/2020-04-18-deads-2008-2018-vs-covid.ipynb" role="button">
+    <img class="notebook-badge-image" src="/assets/badges/github.svg" alt="View On GitHub">
+</a>
+</div><div class="px-2">
+    <a href="https://colab.research.google.com/github/cast42/cast42/blob/master/_notebooks/2020-04-18-deads-2008-2018-vs-covid.ipynb">
+        <img class="notebook-badge-image" src="/assets/badges/colab.svg" alt="Open In Colab"/>
+    </a>
+</div>
+        </div>
+      </header>
 
   <div class="post-content e-content" itemprop="articleBody">
-    <!--
+    <ul id="toc" class="section-nav">
+<li class="toc-entry toc-h1"><a href="#Source-date-from-sciensano">Source date from sciensano </a></li>
+<li class="toc-entry toc-h1"><a href="#Obtain-more-detail-(for-another-blogpost...)">Obtain more detail (for another blogpost...) </a></li>
+</ul><!--
 #################################################
 ### THIS FILE WAS AUTOGENERATED! DO NOT EDIT! ###
 #################################################
@@ -110,7 +151,7 @@
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Import Pandas for data wrangling and Altair for plotting</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Import Pandas library for data wrangling and Altair for plotting</span>
 <span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
 <span class="kn">import</span> <span class="nn">altair</span> <span class="k">as</span> <span class="nn">alt</span>
 </pre></div>
@@ -122,7 +163,8 @@
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The number of deadths per day from 2008 until 2018 can obtained from Statbel:</p>
 
@@ -136,7 +178,7 @@
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;https://statbel.fgov.be/sites/default/files/files/opendata/bevolking/TF_DEATHS.xlsx&#39;</span><span class="p">)</span> <span class="c1"># , skiprows=5, sheet_name=sheetnames</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">'https://statbel.fgov.be/sites/default/files/files/opendata/bevolking/TF_DEATHS.xlsx'</span><span class="p">)</span> <span class="c1"># , skiprows=5, sheet_name=sheetnames</span>
 </pre></div>
 
     </div>
@@ -236,8 +278,8 @@
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Jaar&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;DT_DATE&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">year</span>
-<span class="n">df</span><span class="p">[</span><span class="s1">&#39;Dag&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;DT_DATE&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">dayofyear</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">'Jaar'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'DT_DATE'</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">year</span>
+<span class="n">df</span><span class="p">[</span><span class="s1">'Dag'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">'DT_DATE'</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">dayofyear</span>
 </pre></div>
 
     </div>
@@ -254,7 +296,7 @@
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_plot</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Dag&#39;</span><span class="p">)[</span><span class="s1">&#39;MS_NUM_DEATHS&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">to_frame</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_plot</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'Dag'</span><span class="p">)[</span><span class="s1">'MS_NUM_DEATHS'</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">to_frame</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -271,8 +313,8 @@
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Let&#39;s make a quick plot</span>
-<span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">df_plot</span><span class="p">)</span><span class="o">.</span><span class="n">mark_line</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Dag&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;MS_NUM_DEATHS&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Let's make a quick plot</span>
+<span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">df_plot</span><span class="p">)</span><span class="o">.</span><span class="n">mark_line</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">'Dag'</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">'MS_NUM_DEATHS'</span><span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">600</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -346,7 +388,8 @@
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>The <a href="https://systems.jhu.edu/research/public-health/ncov/">John Hopkings University CSSE</a> keeps track of the number of covid-19 deadths per day and county on the a github reposotry: <a href="https://github.com/CSSEGISandData/COVID-19">https://github.com/CSSEGISandData/COVID-19</a></p>
 
@@ -361,8 +404,8 @@
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Obtain the data</span>
-<span class="n">deaths_url</span> <span class="o">=</span>  <span class="s1">&#39;https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv&#39;</span>
-<span class="n">deaths</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">deaths_url</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">&#39;,&#39;</span><span class="p">)</span>
+<span class="n">deaths_url</span> <span class="o">=</span>  <span class="s1">'https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv'</span>
+<span class="n">deaths</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="n">deaths_url</span><span class="p">,</span> <span class="n">sep</span><span class="o">=</span><span class="s1">','</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -380,7 +423,7 @@
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Filter out Belgium</span>
-<span class="n">deaths_be</span> <span class="o">=</span> <span class="n">deaths</span><span class="p">[</span><span class="n">deaths</span><span class="p">[</span><span class="s1">&#39;Country/Region&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Belgium&#39;</span><span class="p">]</span>
+<span class="n">deaths_be</span> <span class="o">=</span> <span class="n">deaths</span><span class="p">[</span><span class="n">deaths</span><span class="p">[</span><span class="s1">'Country/Region'</span><span class="p">]</span> <span class="o">==</span> <span class="s1">'Belgium'</span><span class="p">]</span>
 </pre></div>
 
     </div>
@@ -620,7 +663,7 @@
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Create dateframe for plotting</span>
-<span class="n">df_deaths</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Datum&#39;</span><span class="p">:</span><span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">deaths_be</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">4</span><span class="p">:]),</span> <span class="s1">&#39;Overlijdens&#39;</span><span class="p">:</span><span class="n">deaths_be</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">4</span><span class="p">:]})</span>
+<span class="n">df_deaths</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="p">{</span><span class="s1">'Datum'</span><span class="p">:</span><span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">deaths_be</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="mi">4</span><span class="p">:]),</span> <span class="s1">'Overlijdens'</span><span class="p">:</span><span class="n">deaths_be</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">4</span><span class="p">:]})</span>
 </pre></div>
 
     </div>
@@ -637,8 +680,8 @@
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Check for Nan&#39;s</span>
-<span class="n">df_deaths</span><span class="p">[</span><span class="s1">&#39;Overlijdens&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Check for Nan's</span>
+<span class="n">df_deaths</span><span class="p">[</span><span class="s1">'Overlijdens'</span><span class="p">]</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -672,7 +715,7 @@
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Convert to integer</span>
-<span class="n">df_deaths</span><span class="p">[</span><span class="s1">&#39;Overlijdens&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_deaths</span><span class="p">[</span><span class="s1">&#39;Overlijdens&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
+<span class="n">df_deaths</span><span class="p">[</span><span class="s1">'Overlijdens'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_deaths</span><span class="p">[</span><span class="s1">'Overlijdens'</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">int</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -690,7 +733,7 @@
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Add day of the year to the dataframe</span>
-<span class="n">df_deaths</span><span class="p">[</span><span class="s1">&#39;Dag&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_deaths</span><span class="p">[</span><span class="s1">&#39;Datum&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">dayofyear</span>
+<span class="n">df_deaths</span><span class="p">[</span><span class="s1">'Dag'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_deaths</span><span class="p">[</span><span class="s1">'Datum'</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">dayofyear</span>
 </pre></div>
 
     </div>
@@ -708,7 +751,7 @@
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Plot the data</span>
-<span class="n">dead_2008_2018</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">df_plot</span><span class="p">)</span><span class="o">.</span><span class="n">mark_line</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;Dag&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;MS_NUM_DEATHS&#39;</span><span class="p">)</span>
+<span class="n">dead_2008_2018</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">df_plot</span><span class="p">)</span><span class="o">.</span><span class="n">mark_line</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">'Dag'</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">'MS_NUM_DEATHS'</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -726,7 +769,7 @@
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Calculate the day-by-day change</span>
-<span class="n">df_deaths</span><span class="p">[</span><span class="s1">&#39;Nieuwe covid-19 Sterfgevallen&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_deaths</span><span class="p">[</span><span class="s1">&#39;Overlijdens&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">diff</span><span class="p">()</span>
+<span class="n">df_deaths</span><span class="p">[</span><span class="s1">'Nieuwe covid-19 Sterfgevallen'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_deaths</span><span class="p">[</span><span class="s1">'Overlijdens'</span><span class="p">]</span><span class="o">.</span><span class="n">diff</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -757,7 +800,7 @@
 <div class="output_area">
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>&lt;class &#39;pandas.core.frame.DataFrame&#39;&gt;
+<pre>&lt;class 'pandas.core.frame.DataFrame'&gt;
 RangeIndex: 87 entries, 0 to 86
 Data columns (total 4 columns):
  #   Column                         Non-Null Count  Dtype         
@@ -786,8 +829,8 @@ memory usage: 2.8 KB
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Plot covid-19 deaths in Belgium according to JHU CSSE</span>
-<span class="n">dead_covid</span><span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">df_deaths</span><span class="p">)</span><span class="o">.</span><span class="n">mark_line</span><span class="p">(</span><span class="n">point</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">&#39;Dag&#39;</span><span class="p">,</span><span class="n">scale</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Scale</span><span class="p">(</span><span class="n">domain</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">110</span><span class="p">),</span> <span class="n">clamp</span><span class="o">=</span><span class="kc">True</span><span class="p">)),</span>
- <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Nieuwe covid-19 Sterfgevallen&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">ColorValue</span><span class="p">(</span><span class="s1">&#39;red&#39;</span><span class="p">),</span> <span class="n">tooltip</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Dag&#39;</span><span class="p">,</span> <span class="s1">&#39;Nieuwe covid-19 Sterfgevallen&#39;</span><span class="p">])</span>
+<span class="n">dead_covid</span><span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">df_deaths</span><span class="p">)</span><span class="o">.</span><span class="n">mark_line</span><span class="p">(</span><span class="n">point</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">'Dag'</span><span class="p">,</span><span class="n">scale</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Scale</span><span class="p">(</span><span class="n">domain</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">110</span><span class="p">),</span> <span class="n">clamp</span><span class="o">=</span><span class="kc">True</span><span class="p">)),</span>
+ <span class="n">y</span><span class="o">=</span><span class="s1">'Nieuwe covid-19 Sterfgevallen'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">ColorValue</span><span class="p">(</span><span class="s1">'red'</span><span class="p">),</span> <span class="n">tooltip</span><span class="o">=</span><span class="p">[</span><span class="s1">'Dag'</span><span class="p">,</span> <span class="s1">'Nieuwe covid-19 Sterfgevallen'</span><span class="p">])</span>
 <span class="n">dead_covid</span>
 </pre></div>
 
@@ -1045,7 +1088,7 @@ memory usage: 2.8 KB
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;Datum&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;DT_DATE&#39;</span><span class="p">])</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">'Datum'</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">'DT_DATE'</span><span class="p">])</span>
 </pre></div>
 
     </div>
@@ -1063,27 +1106,27 @@ memory usage: 2.8 KB
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">line</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">mark_line</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
-    <span class="n">x</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">&#39;Dag&#39;</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Scale</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">'Dag'</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Scale</span><span class="p">(</span>
             <span class="n">domain</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">120</span><span class="p">),</span>
             <span class="n">clamp</span><span class="o">=</span><span class="kc">True</span>
         <span class="p">)),</span>
-    <span class="n">y</span><span class="o">=</span><span class="s1">&#39;mean(MS_NUM_DEATHS)&#39;</span>
+    <span class="n">y</span><span class="o">=</span><span class="s1">'mean(MS_NUM_DEATHS)'</span>
 <span class="p">)</span>
 
 <span class="c1"># Bootstrapped 95% confidence interval</span>
-<span class="n">band</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">mark_errorband</span><span class="p">(</span><span class="n">extent</span><span class="o">=</span><span class="s1">&#39;ci&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
-    <span class="n">x</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">&#39;Dag&#39;</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Scale</span><span class="p">(</span><span class="n">domain</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">120</span><span class="p">),</span> <span class="n">clamp</span><span class="o">=</span><span class="kc">True</span><span class="p">)),</span>
-    <span class="n">y</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">&#39;MS_NUM_DEATHS&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Overlijdens per dag&#39;</span><span class="p">),</span>
+<span class="n">band</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">mark_errorband</span><span class="p">(</span><span class="n">extent</span><span class="o">=</span><span class="s1">'ci'</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">'Dag'</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Scale</span><span class="p">(</span><span class="n">domain</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">120</span><span class="p">),</span> <span class="n">clamp</span><span class="o">=</span><span class="kc">True</span><span class="p">)),</span>
+    <span class="n">y</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">'MS_NUM_DEATHS'</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">'Overlijdens per dag'</span><span class="p">),</span>
 <span class="p">)</span>
 
 <span class="n">dead_covid</span><span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">df_deaths</span><span class="p">)</span><span class="o">.</span><span class="n">mark_line</span><span class="p">(</span><span class="n">point</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
-    <span class="n">x</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">&#39;Dag&#39;</span><span class="p">,</span><span class="n">scale</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Scale</span><span class="p">(</span><span class="n">domain</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">120</span><span class="p">),</span> <span class="n">clamp</span><span class="o">=</span><span class="kc">True</span><span class="p">)),</span>
-    <span class="n">y</span><span class="o">=</span><span class="s1">&#39;Nieuwe covid-19 Sterfgevallen&#39;</span><span class="p">,</span>
-    <span class="n">color</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">ColorValue</span><span class="p">(</span><span class="s1">&#39;red&#39;</span><span class="p">),</span>
-    <span class="n">tooltip</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Dag&#39;</span><span class="p">,</span> <span class="s1">&#39;Nieuwe covid-19 Sterfgevallen&#39;</span><span class="p">,</span> <span class="s1">&#39;Datum&#39;</span><span class="p">]</span>
+    <span class="n">x</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">'Dag'</span><span class="p">,</span><span class="n">scale</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Scale</span><span class="p">(</span><span class="n">domain</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">120</span><span class="p">),</span> <span class="n">clamp</span><span class="o">=</span><span class="kc">True</span><span class="p">)),</span>
+    <span class="n">y</span><span class="o">=</span><span class="s1">'Nieuwe covid-19 Sterfgevallen'</span><span class="p">,</span>
+    <span class="n">color</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">ColorValue</span><span class="p">(</span><span class="s1">'red'</span><span class="p">),</span>
+    <span class="n">tooltip</span><span class="o">=</span><span class="p">[</span><span class="s1">'Dag'</span><span class="p">,</span> <span class="s1">'Nieuwe covid-19 Sterfgevallen'</span><span class="p">,</span> <span class="s1">'Datum'</span><span class="p">]</span>
 <span class="p">)</span>
 
-<span class="p">(</span><span class="n">band</span> <span class="o">+</span> <span class="n">line</span> <span class="o">+</span> <span class="n">dead_covid</span><span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">1024</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Gemiddeld aantal overlijdens over 10 jaar versus overlijdens door covid-19 in Belgie&#39;</span><span class="p">)</span>
+<span class="p">(</span><span class="n">band</span> <span class="o">+</span> <span class="n">line</span> <span class="o">+</span> <span class="n">dead_covid</span><span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">1024</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">'Gemiddeld aantal overlijdens over 10 jaar versus overlijdens door covid-19 in Belgie'</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -1157,9 +1200,12 @@ memory usage: 2.8 KB
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Source-date-from-sciensano">Source date from sciensano<a class="anchor-link" href="#Source-date-from-sciensano"> </a></h1>
+<h1 id="Source-date-from-sciensano">
+<a class="anchor" href="#Source-date-from-sciensano" aria-hidden="true"><span class="octicon octicon-link"></span></a>Source date from sciensano<a class="anchor-link" href="#Source-date-from-sciensano"> </a>
+</h1>
 </div>
 </div>
 </div>
@@ -1170,7 +1216,7 @@ memory usage: 2.8 KB
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_sc</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;https://epistat.sciensano.be/Data/COVID19BE_MORT.csv&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_sc</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">'https://epistat.sciensano.be/Data/COVID19BE_MORT.csv'</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -1287,9 +1333,9 @@ memory usage: 2.8 KB
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_dead_day</span> <span class="o">=</span> <span class="n">df_sc</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;DATE&#39;</span><span class="p">)[</span><span class="s1">&#39;DEATHS&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
-<span class="n">df_dead_day</span><span class="p">[</span><span class="s1">&#39;Datum&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df_dead_day</span><span class="p">[</span><span class="s1">&#39;DATE&#39;</span><span class="p">])</span>
-<span class="n">df_dead_day</span><span class="p">[</span><span class="s1">&#39;Dag&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_dead_day</span><span class="p">[</span><span class="s1">&#39;Datum&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">dayofyear</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_dead_day</span> <span class="o">=</span> <span class="n">df_sc</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">'DATE'</span><span class="p">)[</span><span class="s1">'DEATHS'</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">df_dead_day</span><span class="p">[</span><span class="s1">'Datum'</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_datetime</span><span class="p">(</span><span class="n">df_dead_day</span><span class="p">[</span><span class="s1">'DATE'</span><span class="p">])</span>
+<span class="n">df_dead_day</span><span class="p">[</span><span class="s1">'Dag'</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_dead_day</span><span class="p">[</span><span class="s1">'Datum'</span><span class="p">]</span><span class="o">.</span><span class="n">dt</span><span class="o">.</span><span class="n">dayofyear</span>
 </pre></div>
 
     </div>
@@ -1307,27 +1353,27 @@ memory usage: 2.8 KB
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">line</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">mark_line</span><span class="p">()</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
-    <span class="n">x</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">&#39;Dag&#39;</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Scale</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">'Dag'</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Scale</span><span class="p">(</span>
             <span class="n">domain</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">120</span><span class="p">),</span>
             <span class="n">clamp</span><span class="o">=</span><span class="kc">True</span>
         <span class="p">)),</span>
-    <span class="n">y</span><span class="o">=</span><span class="s1">&#39;mean(MS_NUM_DEATHS)&#39;</span>
+    <span class="n">y</span><span class="o">=</span><span class="s1">'mean(MS_NUM_DEATHS)'</span>
 <span class="p">)</span>
 
 <span class="c1"># Bootstrapped 95% confidence interval</span>
-<span class="n">band</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">mark_errorband</span><span class="p">(</span><span class="n">extent</span><span class="o">=</span><span class="s1">&#39;ci&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
-    <span class="n">x</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">&#39;Dag&#39;</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Scale</span><span class="p">(</span><span class="n">domain</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">120</span><span class="p">),</span> <span class="n">clamp</span><span class="o">=</span><span class="kc">True</span><span class="p">)),</span>
-    <span class="n">y</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">&#39;MS_NUM_DEATHS&#39;</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Overlijdens per dag&#39;</span><span class="p">),</span>
+<span class="n">band</span> <span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">df</span><span class="p">)</span><span class="o">.</span><span class="n">mark_errorband</span><span class="p">(</span><span class="n">extent</span><span class="o">=</span><span class="s1">'ci'</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
+    <span class="n">x</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">'Dag'</span><span class="p">,</span> <span class="n">scale</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Scale</span><span class="p">(</span><span class="n">domain</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">120</span><span class="p">),</span> <span class="n">clamp</span><span class="o">=</span><span class="kc">True</span><span class="p">)),</span>
+    <span class="n">y</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Y</span><span class="p">(</span><span class="s1">'MS_NUM_DEATHS'</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">'Overlijdens per dag'</span><span class="p">),</span>
 <span class="p">)</span>
 
 <span class="n">dead_covid</span><span class="o">=</span> <span class="n">alt</span><span class="o">.</span><span class="n">Chart</span><span class="p">(</span><span class="n">df_dead_day</span><span class="p">)</span><span class="o">.</span><span class="n">mark_line</span><span class="p">(</span><span class="n">point</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span><span class="o">.</span><span class="n">encode</span><span class="p">(</span>
-    <span class="n">x</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">&#39;Dag&#39;</span><span class="p">,</span><span class="n">scale</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Scale</span><span class="p">(</span><span class="n">domain</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">120</span><span class="p">),</span> <span class="n">clamp</span><span class="o">=</span><span class="kc">True</span><span class="p">)),</span>
-    <span class="n">y</span><span class="o">=</span><span class="s1">&#39;DEATHS&#39;</span><span class="p">,</span>
-    <span class="n">color</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">ColorValue</span><span class="p">(</span><span class="s1">&#39;red&#39;</span><span class="p">),</span>
-    <span class="n">tooltip</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Dag&#39;</span><span class="p">,</span> <span class="s1">&#39;DEATHS&#39;</span><span class="p">,</span> <span class="s1">&#39;Datum&#39;</span><span class="p">]</span>
+    <span class="n">x</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">X</span><span class="p">(</span><span class="s1">'Dag'</span><span class="p">,</span><span class="n">scale</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">Scale</span><span class="p">(</span><span class="n">domain</span><span class="o">=</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">120</span><span class="p">),</span> <span class="n">clamp</span><span class="o">=</span><span class="kc">True</span><span class="p">)),</span>
+    <span class="n">y</span><span class="o">=</span><span class="s1">'DEATHS'</span><span class="p">,</span>
+    <span class="n">color</span><span class="o">=</span><span class="n">alt</span><span class="o">.</span><span class="n">ColorValue</span><span class="p">(</span><span class="s1">'red'</span><span class="p">),</span>
+    <span class="n">tooltip</span><span class="o">=</span><span class="p">[</span><span class="s1">'Dag'</span><span class="p">,</span> <span class="s1">'DEATHS'</span><span class="p">,</span> <span class="s1">'Datum'</span><span class="p">]</span>
 <span class="p">)</span>
 
-<span class="p">(</span><span class="n">band</span> <span class="o">+</span> <span class="n">line</span> <span class="o">+</span> <span class="n">dead_covid</span><span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">1024</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Gemiddeld aantal overlijdens over 10 jaar versus overlijdens door covid-19 in Belgie&#39;</span><span class="p">)</span>
+<span class="p">(</span><span class="n">band</span> <span class="o">+</span> <span class="n">line</span> <span class="o">+</span> <span class="n">dead_covid</span><span class="p">)</span><span class="o">.</span><span class="n">properties</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">1024</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">'Gemiddeld aantal overlijdens over 10 jaar versus overlijdens door covid-19 in Belgie'</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -1401,9 +1447,12 @@ memory usage: 2.8 KB
 </div>
     
 
-<div class="cell border-box-sizing text_cell rendered"><div class="inner_cell">
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Obtain-more-detail-(for-another-blogpost...)">Obtain more detail (for another blogpost...)<a class="anchor-link" href="#Obtain-more-detail-(for-another-blogpost...)"> </a></h1>
+<h1 id="Obtain-more-detail-(for-another-blogpost...)">
+<a class="anchor" href="#Obtain-more-detail-(for-another-blogpost...)" aria-hidden="true"><span class="octicon octicon-link"></span></a>Obtain more detail (for another blogpost...)<a class="anchor-link" href="#Obtain-more-detail-(for-another-blogpost...)"> </a>
+</h1>
 </div>
 </div>
 </div>
@@ -1414,7 +1463,7 @@ memory usage: 2.8 KB
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_tot_sc</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">&#39;https://epistat.sciensano.be/Data/COVID19BE.xlsx&#39;</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_tot_sc</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_excel</span><span class="p">(</span><span class="s1">'https://epistat.sciensano.be/Data/COVID19BE.xlsx'</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -1587,7 +1636,16 @@ memory usage: 2.8 KB
 
 </div>
 
-  </div><a class="u-url" href="/2020/04/18/2020-04-18-deads-2008-2018-vs-covid.html" hidden></a>
+
+  </div><!-- from https://github.com/utterance/utterances -->
+<script src="https://utteranc.es/client.js"
+        repo="cast42/cast42"
+        issue-term="title"
+        label="blogpost-comment"
+        theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script><a class="u-url" href="/cast42/jupyter/covid19/belgium/altair/2020/04/18/deads-2008-2018-vs-covid.html" hidden></a>
 </article>
       </div>
     </main><footer class="site-footer h-card">
