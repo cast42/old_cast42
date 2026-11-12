@@ -33,10 +33,12 @@ services:
 
   jekyll:
     working_dir: /data
-    image: jekyll/jekyll
+    build:
+      context: .
+      dockerfile: _action_files/jekyll.Dockerfile
     restart: unless-stopped
     ports:
       - "4000:4000"
     volumes:
       - .:/data/
-    command: jekyll serve
+    command: bundle exec jekyll serve --host 0.0.0.0
